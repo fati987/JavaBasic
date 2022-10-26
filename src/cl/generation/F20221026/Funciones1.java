@@ -21,6 +21,8 @@ public class Funciones1 {
 		System.out.println(valorRetornado + 35);
 		String nombreCompleto = obtenerNom("Fatima", "Requena", "Canepa");
 		System.out.println("El nombre completo es: " + nombreCompleto);
+		//swagger
+		llamadaOtroMetodo();
 	}
 
 	// definicion o estructura de un metodo
@@ -63,6 +65,11 @@ public class Funciones1 {
 	public static String obtenerNom(String nombre, String apePaterno, String apeMaterno) {
 		String nomCompleto = nombre + " " + apePaterno + " " + apeMaterno;
 		return nomCompleto;// retornamos el contenido de la variable
+	}
+	//metodo que llama a otro metodo
+	public static void llamadaOtroMetodo() {
+		System.out.println("Llamada a otro metodo desde un metodo");
+		metodo4(1234,54.3f);
 	}
 
 }
