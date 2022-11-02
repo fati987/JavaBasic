@@ -37,9 +37,13 @@ public class Basquetbolista extends EquipoBasquetbol {
 
 	@Override
 	public String toString() {
-		return "Basquetbolista [altura=" + altura + ", getNombre()=" + getNombre() + ", getApellido()=" + getApellido()
+		return "Basquetbolista [altura=" + altura + ", Nombre=" + getNombre() + ", Apellido=" + getApellido()
 				+ "]";
 	}
 	
+	@Override
+	public void metodoImprimir() {
+		System.out.println("Estoy en el metodo de la hija Basquetbolista");
+	}
 	
 }

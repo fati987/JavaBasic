@@ -19,6 +19,12 @@ public class Entrenador extends EquipoBasquetbol { //extends estamos heredando
 		this.equipo = equipo;
 	}
 
+	public Entrenador(String nombre, String apellido, int edad, int anosExperiencia, String equipo) {
+		super(nombre, apellido, edad);
+		this.anosExperiencia = anosExperiencia;
+		this.equipo = equipo;
+	}
+
 	public int getAnosExperiencia() {
 		return anosExperiencia;
 	}
@@ -37,9 +43,12 @@ public class Entrenador extends EquipoBasquetbol { //extends estamos heredando
 
 	@Override
 	public String toString() {
-		return "Entrenador [anosExperiencia=" + anosExperiencia + ", equipo=" + equipo + ", getNombre()=" + getNombre()
-				+ ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + "]";
+		return "Entrenador [anosExperiencia=" + anosExperiencia + ", equipo=" + equipo + ", Nombre=" + getNombre()
+				+ ", Apellido=" + getApellido() + ", Edad=" + getEdad() + "]";
 	}
-
 	
+	/*@Override
+	public void metodoImprimir() {
+		System.out.println("Estoy en el metodo de la hija Entrenador");
+	}*/
 }

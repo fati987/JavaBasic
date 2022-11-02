@@ -37,9 +37,13 @@ public class Kinesiologo extends EquipoBasquetbol{
 
 	@Override
 	public String toString() {
-		return "Kinesiologo [titulo=" + titulo + ", especialidad=" + especialidad + ", getNombre()=" + getNombre()
-				+ ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + "]";
+		return "Kinesiologo [titulo=" + titulo + ", especialidad=" + especialidad + ", Nombre=" + getNombre()
+				+ ", Apellido=" + getApellido() + ", Edad=" + getEdad() + "]";
 	}
 
+	@Override
+	public void metodoImprimir() {
+		System.out.println("Estoy en el metodo de la hija Kinesiologo");
+	}
 	
 }

@@ -6,45 +6,58 @@ public class Main {
 
 	public static void main(String[] args) {
 		// herencia en Java
-		//instanciando objetos
-		Entrenador entrenador = new Entrenador ();
+		// instanciando objetos
+		Entrenador entrenador = new Entrenador();
 		entrenador.setNombre("Jhon");
 		entrenador.setApellido("Doe");
 		entrenador.setEdad(55);
 		entrenador.setAnosExperiencia(10);
 		entrenador.setEquipo("Valdivia");
-		
+
 		System.out.println(entrenador.toString());
-		
+
 		Kinesiologo kine = new Kinesiologo();
 		kine.setNombre("Jane");
 		kine.setApellido("Doe");
 		kine.setEdad(52);
 		kine.setTitulo("Kinesiologia");
 		kine.setEspecialidad("Musculo");
-		
+
 		System.out.println(kine.toString());
-		
+
 		ArrayList<Basquetbolista> listaJugadores = new ArrayList<Basquetbolista>();
 
 		Basquetbolista basket = new Basquetbolista();
 		basket.setNombre("Michel");
 		basket.setApellido("Pipen");
 		basket.setAltura(2.15f);
-		
-		listaJugadores.add(basket);//agregando un objeto a la lista
-		
+
+		listaJugadores.add(basket);// agregando un objeto a la lista
+
 		Basquetbolista basket2 = new Basquetbolista();
 		basket2.setNombre("Steve");
 		basket2.setApellido("Curry");
 		basket2.setAltura(2.05f);
-		
+
 		listaJugadores.add(basket2);
-		
-		//recorrer lista
+
+		// recorrer lista
 		for (Basquetbolista jugador : listaJugadores) {
 			System.out.println(jugador.toString());
 		}
+		
+		Entrenador entrenadorAyudante = new Entrenador("Isra", "Palma", 42, 17, "cohorte 2");
+		System.out.println(entrenador.toString());
+		System.out.println(entrenadorAyudante.toString());
+		
+
+		entrenador.metodoImprimir();
+		kine.metodoImprimir();
+		basket2.metodoImprimir();
+		
+		//instacia de clase nieta
+		Ayudante ayudante = new Ayudante();
+		ayudante.metodoImprimir();
 	}
 
 }
